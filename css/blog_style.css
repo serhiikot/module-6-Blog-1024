@@ -2,6 +2,7 @@
 
 /*================MAIN=========== */
 main {
+    position: relative;
     display: flex;
     max-width: 1024px;
     margin: auto;
@@ -14,11 +15,9 @@ main {
     display: flex;
     flex-direction: column;
     width: 75%;
-    /* height: 786px; */
 }
 .categAndArch {
     width: 25%;
-    /* height: 786px; */
 }
 
 /* -------RECENT POSTS CONTENT------- */
@@ -53,6 +52,13 @@ main {
 .commentsCounter {
     right: 60px;
 }
+.apartments img,
+.mountain img {
+    position: absolute;
+    width: 288px;
+    height: 225px;
+    top: 44px;
+}
 /* --------ДАТА В СИНЕМ КРУЖОЧКЕ------- */
 .apartmentsHeader:before,
 .mountainHeader:before { 
@@ -71,7 +77,7 @@ main {
     width: 31px;
     height: 31px;
     line-height: 1.2;     
-    background-image: url(../img/date_marker.png);
+    background-image: url(../img/main_img/date_marker.png);
 }
 .apartments,
 .mountain {
