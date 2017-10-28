@@ -1,1 +1,97 @@
 @import "common_style.css";
+
+/*================MAIN=========== */
+main {
+    display: flex;
+    max-width: 1024px;
+    margin: auto;
+    padding: 55px 61px 118px 61px;
+    background-color: #fff;
+    border-top: 1px solid #f1f7fb;
+    border-bottom: 1px solid #f1f7fb;
+}
+.recentPosts {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    /* height: 786px; */
+}
+.categAndArch {
+    width: 25%;
+    /* height: 786px; */
+}
+
+/* -------RECENT POSTS CONTENT------- */
+.recentPosts > h2 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    margin: 0;
+    text-transform: uppercase;
+    color: #263555;
+}
+.recentPosts h4 {
+    margin: 0 0 5px 40px;
+    font-family: 'ArialRegular', sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #263555;
+}
+.apartmentsHeader,
+.mountainHeader {
+    position: relative;
+}
+.postedBy,
+.commentsCounter {
+    position: absolute;
+    display: inline-block;
+    margin: 0 0 0 40px;
+    font-family: 'ArialRegular', sans-serif;
+    font-size: 10px;
+    color: #868f8f;
+}
+.commentsCounter {
+    right: 60px;
+}
+/* --------ДАТА В СИНЕМ КРУЖОЧКЕ------- */
+.apartmentsHeader:before,
+.mountainHeader:before { 
+    display: box;                   
+    display: -moz-box;             
+    display: -webkit-box;
+    box-align: center;              
+    -moz-box-align: center;         
+    -webkit-box-align: center;
+    position: absolute;
+    text-align: center;
+    font-family: "ArialRegular", sans-serif;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #fff; 
+    width: 31px;
+    height: 31px;
+    line-height: 1.2;     
+    background-image: url(../img/date_marker.png);
+}
+.apartments,
+.mountain {
+    margin-top: 45px;
+    position: relative;
+    height: 404px;
+}
+
+/* ----------------APPARTMENTS-------------- */
+.apartmentsHeader:before {
+    content: " \0a 23 \0a apr";
+}
+
+/* -----------------LINE------------ */
+.line {
+    margin: 0; 
+    border-top: 1px solid #dedbdb;
+}
+
+/* ---------MOUNTAIN-------- */
+.mountainHeader:before {
+    content: "28 \0a apr";
+}
