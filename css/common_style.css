@@ -8,6 +8,7 @@ body {
     position: relative;
     background-image: url(../img/bg_sky.png);
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     margin: 0;
 }
