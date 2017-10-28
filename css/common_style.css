@@ -151,16 +151,6 @@ header {
     text-decoration: underline;
 }
 
-/*================MAIN=========== */
-
-main {
-    max-width: 1024px;
-    margin: auto;
-    background-color: #fff;
-    border-top: 1px solid #f1f7fb;
-    border-bottom: 1px solid #f1f7fb;
-}
-
 /*================FOOTER=========== */
 footer {
     position: relative;
@@ -236,35 +226,34 @@ footer {
     height: 40px;
     background-image: url(../img/social_icons.png);
     background-repeat: no-repeat;
-    background-position-y: 0;
 }
 .bgTwitter {
-    background-position-x: 0;
+    background-position: 0 0;
 }
 .bgFacebook {
-    background-position-x: -41px;
+    background-position: -41px 0;
 }
 .bgGoogle {
-    background-position-x: -82px;
+    background-position: -82px 0;
 }
 .bgIn {
-    background-position-x: -123px;
+    background-position: -123px 0;
 }
-.socialLinks a:hover {
-    background-position-y: -41px;
+.bgTwitter:hover {
+    background-position: 0 -41px;
     transform: scale(0.95);
 }
-.bgTwitter {
-    background-position-x: 0;
-}
 .bgFacebook:hover {
-    background-position-x: -41px;
+    background-position: -41px -41px;
+    transform: scale(0.95);
 }
 .bgGoogle:hover {
-    background-position-x: -82px;
+    background-position: -82px -41px;
+    transform: scale(0.95);
 }
 .bgIn:hover {
-    background-position-x: -123px;
+    background-position: -123px -41px;
+    transform: scale(0.95);
 }
 
 /* ---------------COPY RIGHTS-------------- */
