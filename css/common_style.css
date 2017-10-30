@@ -98,6 +98,10 @@ nav {
 .topMenuItemDrop > a:hover {
     color: #263555;
 }
+.topMenuItemDrop:active,
+.topMenuItem:active {
+    color: #3e578a;
+}
 /* ----------------ВСПЛЫВАЮЩЕЕ МЕНЮ-------------- */
 .topDropMenu {
     visibility: hidden;

@@ -82,17 +82,19 @@ h2 {
 }
 .mountainContent > div,
 .apartmentsContent > div {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
 }
 .mountainContent .detailsButton,
 .apartmentsContent .detailsButton {
-    margin-top: 20px;
     font-family: 'ArialRegular', sans-serif;
-    font-size: 12px;
+    font-size: 10px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
     border-radius: 5px;
     border: 1px solid #bbb4b4;
+    cursor: pointer;
 }
 
 /* --------ДАТА В СИНЕМ КРУЖОЧКЕ------- */
@@ -100,14 +102,13 @@ h2 {
 .mountainHeader:before { 
     display: box;                   
     display: -moz-box;             
-    display: -webkit-box;
-    box-align: center;              
+    display: -webkit-box;       
     -moz-box-align: center;         
     -webkit-box-align: center;
     position: absolute;
     text-align: center;
     font-family: "ArialRegular", sans-serif;
-    font-size: 9px;
+    font-size: 10px;
     text-transform: uppercase;
     color: #fff; 
     width: 31px;
